@@ -11,6 +11,62 @@ Built with Claude Code. 15 modes. Cover letter generation, cert gap analysis, fo
 portal scanning across 60+ companies, and a 12-dimension scoring system — all running locally from
 your terminal.
 
+Before you start, make sure you have the following installed on your machine:
+
+Node.js (Version 18 or higher is recommended)
+
+Git
+
+Claude Code (Since this tool is built to run specifically with the claude CLI)
+
+Step-by-Step Installation
+
+Clone the Repository
+
+Open your terminal or command prompt and run:
+
+Bash
+
+
+
+git clone https://github.com/TushaeBXN/push-job.git
+
+cd push-job
+
+Install Dependencies
+
+Install the necessary Node modules and the Playwright browser (which the tool uses to scan job portals):
+
+Bash
+
+npm install
+
+npx playwright install chromium
+
+Set Up Your Profile
+
+You need to create your personal configuration files. The repository includes examples to help you get started:
+
+Copy config/profile.example.yml to config/profile.yml and fill in your details (target roles, minimum salary, etc.).
+
+Copy templates/portals.example.yml to templates/portals.yml.
+
+Launch the Tool
+
+Since this is designed as a "brain" for Claude Code, you launch it by starting a Claude session inside the folder:
+
+Bash
+
+claude
+
+Once launched, Claude will detect the .claude/skills and CLAUDE.md files. It should automatically walk you through the remaining onboarding steps to verify your resume and portfolio files.
+
+Available Commands
+
+Once you are inside the claude session, you can use these custom slash commands to manage your job search:
+
+CommandAction/scanScans 60+ job portals for new matching roles./evaluate [URL]Scores a job posting based on your 12-dimension profile./cover [URL]Generates a tailored cover letter for that specific role./resume [URL]Creates an ATS-optimized resume tailored to the job description./briefGives you a daily snapshot of your application pipeline.
+
 ---
 
 ## Push Job vs. career-ops
