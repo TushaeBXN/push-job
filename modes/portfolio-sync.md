@@ -37,7 +37,7 @@ Prioritize:
 
 ## Step 3 — Map to Target Roles
 
-For each repo, map it to one or more of Brian's archetypes:
+For each repo, map it to one or more of the user's archetypes from `modes/_shared.md`:
 
 | Repo | Tech | Archetype | Proof Point |
 |------|------|-----------|-------------|
@@ -50,10 +50,10 @@ For each repo, map it to one or more of Brian's archetypes:
 Generate a structured `portfolio.md`:
 
 ```markdown
-# Portfolio — Tushae Thomas (Brian)
+# Portfolio — [name from profile.yml]
 
 Last synced: [date]
-GitHub: https://github.com/TushaeThomas
+GitHub: [github from profile.yml]
 
 ---
 

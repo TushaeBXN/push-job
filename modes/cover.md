@@ -48,7 +48,7 @@ Example opening pattern:
 > "[Company] just [did X]. That's the kind of [initiative/mission/problem] that made me stop scrolling."
 
 ### Body 1 — Most Relevant Experience
-The single most compelling match between Brian's background and this specific role.
+The single most compelling match between the user's background and this specific role.
 Tie to archetype from `modes/_shared.md`. Be concrete.
 
 ### Body 2 — Proof Point with Metric
@@ -57,8 +57,8 @@ Format: "[I/My project] [did X], resulting in [Y outcome]."
 If no metric exists, use a clear demonstration of competence instead.
 
 ### Body 3 — Forward-Looking Fit
-What excites Brian about this specific company RIGHT NOW.
-What he'd focus on in his first 30 days (based on the JD's top priorities).
+What excites the user about this specific company RIGHT NOW.
+What they'd focus on in the first 30 days (based on the JD's top priorities).
 Keep it specific — generic enthusiasm is worse than silence.
 
 ### Close — Low-Friction CTA

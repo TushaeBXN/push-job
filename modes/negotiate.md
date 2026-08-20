@@ -25,7 +25,7 @@ Input the offer details:
 - Remote / hybrid policy
 - Start date flexibility
 
-Compare against Brian's minimums from `config/profile.yml`.
+Compare against the user's minimums from `config/profile.yml`.
 
 ---
 

@@ -1,8 +1,10 @@
 # Personal data — never commit
-data/
+data/*
+!data/.gitkeep
 reports/
 output/
-batch/tracker-additions/
+batch/tracker-additions/*
+!batch/tracker-additions/.gitkeep
 
 # Personal config
 portals.yml

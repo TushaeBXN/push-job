@@ -22,7 +22,7 @@ If no eval report exists, run `modes/evaluate.md` first.
 From the JD (loaded via Playwright or from the eval report):
 1. Extract the top 20 keywords and phrases (tools, certs, job verbs, stack)
 2. Check which are already in `resume.md`
-3. Flag which are missing but truthfully addable based on Brian's actual background
+3. Flag which are missing but truthfully addable based on the user's actual background
 
 **Keyword gap table:**
 ```

@@ -4,6 +4,7 @@
   "type": "module",
   "description": "AI-powered job search pipeline for cloud, cybersecurity, and tech roles",
   "scripts": {
+    "setup": "node scripts/setup.mjs",
     "pdf": "node scripts/generate-pdf.mjs",
     "merge": "node scripts/tracker-merge.mjs",
     "check": "node scripts/pipeline-check.mjs"
@@ -15,7 +16,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TushaeThomas/push-job.git"
+    "url": "https://github.com/TushaeBXN/push-job.git"
   },
   "keywords": [
     "job-search",

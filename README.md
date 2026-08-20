@@ -93,18 +93,21 @@ CommandAction/scanScans 60+ job portals for new matching roles./evaluate [URL]Sc
 
 ```bash
 # Clone
-git clone https://github.com/TushaeThomas/push-job.git
+git clone https://github.com/TushaeBXN/push-job.git
 cd push-job
 
 # Install
 npm install
 npx playwright install chromium
 
+# First-run setup (copies example configs, initializes data dirs)
+npm run setup
+
 # Launch
 claude
 ```
 
-Claude will detect missing personal files and walk you through first-run onboarding automatically.
+Edit `config/profile.yml` and `resume.md` with your details, then run `claude`.
 
 ---
 
@@ -265,7 +268,7 @@ AWS re/Start Student · Azure SOC Practitioner · Cybersecurity Builder
 - Target: Cloud Engineer | SOC Analyst | DevSecOps | Cloud Security Engineer
 - Location: Charlotte, NC
 - Brand: BER/TMG
-- GitHub: [TushaeThomas](https://github.com/TushaeThomas)
+- GitHub: [TushaeBXN](https://github.com/TushaeBXN)
 
 ---
 

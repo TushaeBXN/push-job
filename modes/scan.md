@@ -29,8 +29,9 @@ Group portals by category and scan in this priority order:
 
 For each portal:
 - Use Playwright to load the careers/jobs page
-- Search for roles matching Brian's target titles:
-  "SOC Analyst", "Cloud Engineer", "Cloud Security", "DevSecOps", "Security Analyst"
+- Wait 2–3 seconds between portals to avoid rate limits
+- If the page returns a non-200 status, a Cloudflare challenge, or `net::ERR_ABORTED`, mark the portal as `unreachable` in the report and continue — do not crash the scan
+- Search for roles matching the user's target titles from `config/profile.yml` (`targets.primary` and `targets.secondary`)
 - Collect URL, title, location, and date posted for each match
 
 ---
@@ -39,8 +40,8 @@ For each portal:
 
 Remove:
 - Roles requiring 5+ years experience (unless score would still be 6+)
-- On-site roles in cities Brian hasn't listed in profile.yml
-- Roles requiring senior-level certs Brian has no path to in 12 months
+- On-site roles in cities not listed in `config/profile.yml` (`locations`)
+- Roles requiring senior-level certs not reachable within 12 months per the user's cert tier profile
 
 ---
 

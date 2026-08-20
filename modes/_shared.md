@@ -5,9 +5,9 @@ and context that every mode relies on.
 
 ---
 
-## Brian's Job Search Archetypes
+## Job Search Archetypes
 
-When evaluating or tailoring for a role, identify which archetype it maps to:
+Read `config/profile.yml` for the user's target roles. Use these archetypes as the default framework; when evaluating or tailoring for a role, identify which archetype it maps to:
 
 | Archetype         | Target Titles                                               | Key Evidence to Show                              |
 |-------------------|-------------------------------------------------------------|---------------------------------------------------|
@@ -19,6 +19,10 @@ When evaluating or tailoring for a role, identify which archetype it maps to:
 ---
 
 ## Cert Tier Profile
+
+Read the user's current cert tiers from `config/profile.yml` (`certs.tier1`, `certs.tier2`, `certs.tier3`).
+
+Default tiers (override with profile.yml):
 
 **Tier 1 — In Progress**
 - AWS CLF-C02 (Cloud Practitioner)
@@ -92,7 +96,7 @@ https://example.com/jobs/456
 
 ## Tone Guidelines
 
-- Direct and confident — Brian is transitioning into a technical career with real experience
+- Direct and confident — the user is building a technical career with real experience
 - No hedging ("you might want to consider possibly...")
 - No filler ("Great question!")
 - Acknowledge gaps honestly and frame them as closing fast

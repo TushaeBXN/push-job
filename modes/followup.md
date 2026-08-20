@@ -66,11 +66,11 @@ Hi [Hiring Manager name if known, otherwise "Hiring Team"],
 I applied for the [Role Title] position on [application date] and wanted to follow up briefly.
 I'm still very interested in the role and would welcome the chance to connect.
 
-[One sentence about what specifically excites Brian about this company or role — from eval report.]
+[One sentence about what specifically excites you about this company or role — from eval report.]
 
 Thanks for your time — I know hiring is a busy process.
 
-[Brian's name]
+[your name from profile.yml]
 [LinkedIn URL from profile.yml]
 ```
 
@@ -79,7 +79,7 @@ Rules:
 - No groveling ("I hope I'm not bothering you...")
 - Project confidence, not desperation
 - Personalize with one real detail from the eval report
-- NEVER send without Brian's review
+- NEVER send without the user's review
 
 ---
 

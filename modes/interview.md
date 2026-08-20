@@ -10,7 +10,7 @@ Read `modes/_shared.md` first.
 
 Read:
 - The eval report for this company in `reports/`
-- `interview-prep/story-bank.md` (Brian's STAR stories)
+- `interview-prep/story-bank.md` (STAR story library)
 - `resume.md` (for specific experience to reference)
 
 ---
@@ -34,7 +34,7 @@ TECHNICAL PREP
 
 Q1: [Question tied to a required tool, e.g., "Walk me through a KQL query you've written to detect lateral movement"]
     Expected answer guidance: [2–3 bullet points]
-    Brian's angle: [which resume/portfolio point to anchor this answer to]
+    Your angle: [which resume/portfolio point to anchor this answer to]
 
 Q2–Q5: [Same format]
 ```
@@ -51,7 +51,7 @@ BEHAVIORAL PREP
 Q1: "Tell me about a time you [relevant challenge]."
     STAR framework:
       Situation: [setup]
-      Task: [what Brian needed to do]
+      Task: [what you needed to do]
       Action: [pull from story-bank.md or suggest a new story]
       Result: [outcome with specifics]
 ```
@@ -68,7 +68,7 @@ Must reference a specific, real detail about the company (product, mission, news
 
 ## Step 6 — Questions to Ask the Interviewer
 
-Generate 5 smart questions Brian should ask:
+Generate 5 smart questions to ask the interviewer:
 - 2 about the team/role day-to-day
 - 1 about tooling or tech environment
 - 1 about growth and advancement
@@ -79,9 +79,9 @@ Generate 5 smart questions Brian should ask:
 ## Step 7 — Mock Q&A (Optional)
 
 If user says "quiz me":
-Ask one question at a time. Wait for Brian's answer.
+Ask one question at a time. Wait for the user's answer.
 Then provide: score (1–5), what was strong, what to add or cut.
-Continue until Brian says "stop" or all questions are covered.
+Continue until the user says "stop" or all questions are covered.
 
 ---
 

@@ -8,9 +8,9 @@ Read `modes/_shared.md` first.
 
 ## Step 1 — Identify the Target
 
-Determine what Brian wants:
+Determine what the user wants:
 - Cold outreach to a recruiter at a target company
-- Warm outreach to someone in Brian's network at a company
+- Warm outreach to someone in the user's network at a company
 - LinkedIn connection request to a hiring manager
 - Thank-you note after an interview
 
@@ -43,14 +43,14 @@ Subject: [Role Title] at [Company] — Referral Request or Quick Question
 
 Hi [Name],
 
-I'm [Brian] — AWS re/Start grad, Azure SOC practitioner, currently pursuing CLF-C02 and CySA+.
+I'm [your name] — [your background from resume.md, 1 sentence].
 I applied for the [role] at [company] on [date].
 
 [One sentence about why you're reaching out to THEM specifically — their team, their background, their post.]
 
 Would you be open to a 15-minute call? Happy to work around your schedule.
 
-[Brian's name + LinkedIn URL]
+[your name + LinkedIn URL from profile.yml]
 ```
 
 ### Post-Interview Thank You
@@ -65,7 +65,7 @@ It reinforced that [Company]'s work on [specific thing] is exactly the direction
 
 Looking forward to next steps.
 
-[Brian]
+[your name]
 ```
 
 ---
@@ -77,7 +77,7 @@ Looking forward to next steps.
 3. Don't ask for a job — ask for a conversation or connection
 4. Never send to more than 3 people at the same company simultaneously
 5. Log all outreach in `data/applications.md` Notes field
-6. NEVER send without Brian's review
+6. NEVER send without the user's review
 
 ---
 

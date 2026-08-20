@@ -72,8 +72,8 @@ COMPOSITE SCORE: [X.X]/10 — [Tier Label]
 
 ## Step 5 — Cert Gap Analysis
 
-Cross-reference extracted cert requirements against Brian's tier profile:
-- List required certs Brian already has (or is pursuing)
+Cross-reference extracted cert requirements against the user's cert tier profile from `config/profile.yml`:
+- List required certs the user already has (or is pursuing)
 - List required certs that are gaps
 - Estimated time to close each gap
 - Whether this is a hard blocker or soft preference
