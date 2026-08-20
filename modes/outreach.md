@@ -23,7 +23,7 @@ Ask if not specified: "Who are we reaching out to, and what's the goal?"
 Use WebSearch to find:
 - Their name and current role
 - Their LinkedIn (if publicly visible)
-- Any shared background (AWS re/Start, Charlotte, security community)
+- Any shared background (cloud/security community, shared alma mater, past employer)
 - Recent posts or activity that can serve as a hook
 
 ---

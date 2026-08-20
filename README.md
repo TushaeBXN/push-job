@@ -1,73 +1,213 @@
 # Push Job
-<img width="1254" height="1254" alt="jobpush" src="https://github.com/user-attachments/assets/35d2c270-7228-4ddf-a7c7-6010de4c867d" />
 
+<img width="1254" height="1254" alt="jobpush" src="https://github.com/user-attachments/assets/35d2c270-7228-4ddf-a7c7-6010de4c867d" />
 
 ![Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code-orange?style=flat-square)
 ![Node.js](https://img.shields.io/badge/Node.js-18%2B-green?style=flat-square)
 ![Playwright](https://img.shields.io/badge/Playwright-1.44%2B-blue?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)
 
-**AI-powered job search pipeline for cloud, cybersecurity, and tech roles.**
+**Push Job is an AI job search assistant that runs on your computer.**
 
-Built with Claude Code. 15 modes. Cover letter generation, cert gap analysis, follow-up scheduling,
-portal scanning across 60+ companies, and a 12-dimension scoring system — all running locally from
-your terminal.
+You tell it what kind of job you want. It scans 60+ company job boards, scores each posting, writes your cover letter, tailors your resume, tracks your applications, and reminds you when to follow up — all from a single chat window.
 
-Before you start, make sure you have the following installed on your machine:
+No accounts. No subscriptions. Runs locally on your machine.
 
-Node.js (Version 18 or higher is recommended)
+---
 
-Git
+## What It Does
 
-Claude Code (Since this tool is built to run specifically with the claude CLI)
+| Task | How it helps |
+|------|-------------|
+| Find jobs | Scans 60+ company career pages and job boards automatically |
+| Score jobs | Rates every posting 0–10 so you know which ones are worth your time |
+| Write cover letters | Researches the company, then writes a tailored letter — no generic templates |
+| Tailor your resume | Rewrites your resume with keywords from the specific job description |
+| Track applications | Keeps a log of everything you've applied to and where each one stands |
+| Follow-up reminders | Tells you when it's time to check in and drafts the email for you |
+| Interview prep | Generates role-specific questions and drills you with mock Q&A |
 
-Step-by-Step Installation
+---
 
-Clone the Repository
+## Before You Start
 
-Open your terminal or command prompt and run:
+You need three things installed on your computer. Each one is free.
 
-Bash
+**1. Node.js** (the engine that runs the tool)
+- Download it at https://nodejs.org — click the button that says "LTS"
+- Run the installer, click through the prompts
 
+**2. Git** (used to download this project)
+- Download it at https://git-scm.com/downloads
+- Run the installer, leave all settings as default
 
+**3. Claude Code** (the AI chat window the tool runs inside)
+- Install it by opening your terminal and running:
 
+```bash
+npm install -g @anthropic/claude-code
+```
+
+> **What's a terminal?** On Mac: press `Cmd + Space`, type `Terminal`, hit Enter. On Windows: search for `Command Prompt` in the Start menu.
+
+---
+
+## Setup — Step by Step
+
+### Step 1 — Download Push Job
+
+Open your terminal and run these two lines, one at a time:
+
+```bash
 git clone https://github.com/TushaeBXN/push-job.git
+```
 
+```bash
 cd push-job
+```
 
-Install Dependencies
+> This downloads the project to your computer and moves you inside the folder.
 
-Install the necessary Node modules and the Playwright browser (which the tool uses to scan job portals):
+---
 
-Bash
+### Step 2 — Install Dependencies
 
+Run these two lines, one at a time:
+
+```bash
 npm install
+```
 
+```bash
 npx playwright install chromium
+```
 
-Set Up Your Profile
+> This installs the tools Push Job needs to scan job websites. It may take a minute or two.
 
-You need to create your personal configuration files. The repository includes examples to help you get started:
+---
 
-Copy config/profile.example.yml to config/profile.yml and fill in your details (target roles, minimum salary, etc.).
+### Step 3 — Run First-Time Setup
 
-Copy templates/portals.example.yml to templates/portals.yml.
+```bash
+npm run setup
+```
 
-Launch the Tool
+> This creates your personal config files and sets up the folders where your data will be saved.
 
-Since this is designed as a "brain" for Claude Code, you launch it by starting a Claude session inside the folder:
+---
 
-Bash
+### Step 4 — Fill In Your Profile
 
+Open the file `config/profile.yml` in any text editor (Notepad, TextEdit, VS Code — anything works).
+
+Fill in:
+- Your target job titles (e.g. "Cloud Engineer", "SOC Analyst")
+- Your location and whether you want remote work
+- Your minimum salary
+
+Save the file when you're done.
+
+---
+
+### Step 5 — Add Your Resume
+
+Open the file `resume.md` and paste your resume content in.
+
+Don't worry about formatting perfectly — just get your experience, skills, and education in there. The AI will handle the rest when it tailors it for each job.
+
+---
+
+### Step 6 — Launch
+
+```bash
 claude
+```
 
-Once launched, Claude will detect the .claude/skills and CLAUDE.md files. It should automatically walk you through the remaining onboarding steps to verify your resume and portfolio files.
+> This opens the AI chat window inside Push Job. You're now ready to go.
 
-Available Commands
+---
 
-Once you are inside the claude session, you can use these custom slash commands to manage your job search:
+## How to Use It (Commands)
 
-CommandAction/scanScans 60+ job portals for new matching roles./evaluate [URL]Scores a job posting based on your 12-dimension profile./cover [URL]Generates a tailored cover letter for that specific role./resume [URL]Creates an ATS-optimized resume tailored to the job description./briefGives you a daily snapshot of your application pipeline.
+Once you're inside the chat, type any of these commands:
+
+| Command | What it does |
+|---------|-------------|
+| `/scan` | Searches 60+ job boards and company career pages for roles that match your profile |
+| `/evaluate [paste a job URL here]` | Scores a job posting from 0–10 and tells you if it's worth applying |
+| `/cover [paste a job URL here]` | Writes a tailored cover letter for that specific job |
+| `/resume [paste a job URL here]` | Rewrites your resume with keywords from that job's description |
+| `/tracker` | Shows all your applications and their current status |
+| `/followup` | Checks which applications need a follow-up and drafts the email |
+| `/brief` | Gives you a quick daily summary — what's pending, what needs action |
+| `/interview [company name]` | Preps you for the interview with likely questions and mock Q&A |
+| `/certs` | Shows which certifications appear most in your active applications |
+| `/negotiate [offer amount]` | Helps you respond to a salary offer with market-rate data |
+| `/outreach [company name]` | Drafts a LinkedIn message or cold email to a recruiter |
+| `/portfolio-sync` | Pulls your GitHub projects and summarizes them as proof points |
+| `/batch pipeline` | Scores all the jobs in your list at once |
+| `/check` | Makes sure everything is set up correctly |
+
+### Example workflow
+
+```
+/scan                                         ← find new jobs
+/evaluate https://jobs.example.com/123        ← is this one worth it?
+/cover https://jobs.example.com/123           ← write the cover letter
+/resume https://jobs.example.com/123          ← tailor the resume
+/tracker                                      ← see where everything stands
+/followup                                     ← check in on old applications
+```
+
+---
+
+## How Jobs Are Scored
+
+Every job gets a score from 0 to 10. The AI looks at 12 things:
+
+| # | What it checks | Weight |
+|---|---------------|--------|
+| 1 | Does the job title match what you're looking for? | 12% |
+| 2 | Does the tech stack match your skills? | 12% |
+| 3 | Does your resume have the keywords the job is looking for? | 10% |
+| 4 | Do your certifications match what they want? | 10% |
+| 5 | Does the salary meet your minimum? | 10% |
+| 6 | Will this role help you grow? | 8% |
+| 7 | Does the company's mission align with yours? | 8% |
+| 8 | Is the location or remote policy a match? | 8% |
+| 9 | Do your projects prove you can do this work? | 8% |
+| 10 | How likely are you to get an interview? | 6% |
+| 11 | Is the posting about to expire or the company hot right now? | 4% |
+| 12 | Do you have any connections or warm leads there? | 4% |
+
+**What the score means:**
+
+| Score | What to do |
+|-------|-----------|
+| 8.0 or higher | Apply today — tailor your resume and cover letter now |
+| 6.0 – 7.9 | Strong candidate — worth the effort to polish and apply |
+| 4.0 – 5.9 | Low priority — apply only if you have a slow week |
+| Under 4.0 | Skip — log it and move on |
+
+---
+
+## Where It Searches
+
+Push Job scans 60+ companies across these categories:
+
+| Category | Examples |
+|----------|---------|
+| Cloud Providers | AWS, Azure, Google Cloud, Cloudflare, DigitalOcean |
+| Cloud Managed Services | Rackspace, Logicworks, Presidio |
+| Cybersecurity | CrowdStrike, SentinelOne, Huntress, Rapid7, Palo Alto Networks |
+| Identity & Network | Okta, Zscaler, Fortinet, Tenable |
+| SIEM / SOC Platforms | Splunk, Elastic, Arctic Wolf, Devo, Sumo Logic |
+| DevSecOps & Cloud Security | Wiz, Snyk, HashiCorp, Lacework, Aqua |
+| Defense & Government Cloud | Booz Allen, SAIC, Leidos, MITRE, ManTech |
+| Enterprise | Microsoft, IBM, Accenture, Deloitte, KPMG |
+| AI & Data | Anthropic, Databricks, Scale AI |
+| Fintech | Bank of America, Wells Fargo |
+| Job Boards | LinkedIn, Dice, Wellfound, RemoteOK, CyberSecJobs |
 
 ---
 
@@ -83,166 +223,8 @@ CommandAction/scanScans 60+ job portals for new matching roles./evaluate [URL]Sc
 | Scoring dimensions | 10 | **12** |
 | Portal focus | AI/SaaS | **Cloud + Cyber + Tech** |
 | Stack | Go + Node + Shell | **Node only** |
-| Cover letter template | ❌ | ✅ |
 | Defense/GovCloud portals | ❌ | ✅ |
 | Cert-to-role unlock matrix | ❌ | ✅ |
-
----
-
-## Quick Start
-
-```bash
-# Clone
-git clone https://github.com/TushaeBXN/push-job.git
-cd push-job
-
-# Install
-npm install
-npx playwright install chromium
-
-# First-run setup (copies example configs, initializes data dirs)
-npm run setup
-
-# Launch
-claude
-```
-
-Edit `config/profile.yml` and `resume.md` with your details, then run `claude`.
-
----
-
-## Commands
-
-| Command | Description |
-|---------|-------------|
-| `/evaluate [URL]` | Score a job posting across 12 dimensions + cert gap analysis |
-| `/cover [URL]` | Generate a tailored cover letter (company-researched, no "I am writing to...") |
-| `/resume [URL]` | ATS-optimized resume tailored to a specific JD + PDF generation |
-| `/scan` | Scan 60+ cloud/cyber portals for new matching roles |
-| `/batch pipeline` | Evaluate all pending URLs in parallel |
-| `/tracker` | View full application pipeline by status |
-| `/interview [company]` | Role-specific technical + behavioral prep with mock Q&A |
-| `/certs` | Cert gap analysis across all Tier 1 applications |
-| `/followup` | Check overdue follow-ups and draft outreach emails |
-| `/brief` | Daily pipeline snapshot + one recommended action |
-| `/negotiate [amount]` | Salary negotiation scripts anchored to market data |
-| `/outreach [company]` | LinkedIn/cold email drafts |
-| `/portfolio-sync` | Sync GitHub repos into portfolio.md as proof points |
-| `/check` | Pipeline health check (files, tracker integrity, status validation) |
-
----
-
-## 12-Dimension Scoring System
-
-Every job is scored as a weighted composite (0–10):
-
-| # | Dimension | Weight | What It Measures |
-|---|-----------|--------|-----------------|
-| 1 | Role match | 12% | JD title alignment with target roles |
-| 2 | Tech stack | 12% | AWS, Azure, KQL, Sentinel, AD, honeynet overlap |
-| 3 | ATS keyword match | 10% | JD keywords present in your resume |
-| 4 | Cert alignment | 10% | Required/preferred certs vs. your tier profile |
-| 5 | Compensation fit | 10% | Comp vs. your minimum (from profile.yml) |
-| 6 | Growth trajectory | 8% | Will this role accelerate your path? |
-| 7 | Culture/mission | 8% | Company mission alignment |
-| 8 | Location/remote | 8% | Remote-friendly or target city match |
-| 9 | Portfolio relevance | 8% | GitHub proof points matching the JD |
-| 10 | Interview probability | 6% | Likelihood of passing ATS + screen |
-| 11 | Urgency | 4% | Expiring posting, hot company |
-| 12 | Network/referral | 4% | Warm connection or community overlap |
-
-**Score tiers:**
-
-| Score | Tier | Action |
-|-------|------|--------|
-| 8.0+ | Apply Now | Tailored resume + cover letter today |
-| 6.0–7.9 | Apply/Tailor | Polish resume, generate cover letter |
-| 4.0–5.9 | Low Priority | Apply only if the week is slow |
-| < 4.0 | Skip | Log and move on |
-
----
-
-## Cert Tier Profile
-
-The scoring engine uses a tiered cert profile to assess alignment and prioritize study:
-
-**Tier 1 — In Progress:** AWS CLF-C02 · CompTIA CySA+
-**Tier 2 — Next:** AWS SAA-C03 · Security+ · AZ-500
-**Tier 3 — Long-term:** AWS SAP-C02 · CISSP · CCSP
-
-Run `/certs` to see which certs appear most in your active applications.
-
----
-
-## Portal Coverage
-
-**60+ companies across:**
-
-| Category | Companies |
-|----------|-----------|
-| Cloud Providers | AWS, Azure, GCP, Cloudflare, Fastly, DigitalOcean, Akamai |
-| Cloud MSPs | Rackspace, 2nd Watch, Logicworks, Presidio |
-| Cybersecurity (EDR/XDR) | CrowdStrike, SentinelOne, Huntress, Rapid7, Cybereason |
-| Network/Identity | Palo Alto Networks, Okta, Zscaler, Fortinet, Tenable |
-| SIEM/SOC | Splunk, Elastic, Devo, Sumo Logic, Arctic Wolf, Exabeam |
-| DevSecOps/CSPM | Wiz, Snyk, HashiCorp, Lacework, Orca Security, Aqua |
-| Defense/GovCloud | Booz Allen, SAIC, Leidos, MITRE, ManTech, GDIT |
-| Enterprise | Microsoft, IBM, Accenture, Deloitte, KPMG |
-| AI/Automation | Anthropic, Databricks, Weights & Biases, Scale AI |
-| Fintech | Bank of America, Wells Fargo, LendingTree |
-| Job Boards | LinkedIn, Wellfound, Dice, RemoteOK, CyberSecJobs |
-
----
-
-## Project Structure
-
-```
-push-job/
-├── CLAUDE.md                    ← Agent brain (scoring, routing, onboarding)
-├── README.md
-├── package.json
-├── .gitignore
-├── resume.md                    ← Your resume (gitignored)
-├── portfolio.md                 ← GitHub portfolio (gitignored)
-├── config/
-│   ├── profile.example.yml      ← Copy to profile.yml and fill in
-│   └── scoring.yml              ← Tweak scoring weights
-├── modes/
-│   ├── _shared.md               ← Archetypes, cert tiers, conventions
-│   ├── evaluate.md              ← 12-dimension evaluation
-│   ├── cover.md                 ← Cover letter generation
-│   ├── resume-mode.md           ← ATS resume tailoring + PDF
-│   ├── scan.md                  ← Portal scanning
-│   ├── batch.md                 ← Parallel batch evaluation
-│   ├── tracker.md               ← Application status
-│   ├── interview.md             ← Interview prep
-│   ├── certs.md                 ← Cert gap analysis
-│   ├── followup.md              ← Follow-up scheduler
-│   ├── brief.md                 ← Daily pipeline brief
-│   ├── negotiate.md             ← Salary negotiation
-│   ├── outreach.md              ← LinkedIn/cold outreach
-│   └── portfolio-sync.md        ← GitHub portfolio sync
-├── templates/
-│   ├── resume.html              ← ATS-optimized HTML resume
-│   ├── cover.html               ← Cover letter template
-│   ├── portals.example.yml      ← 60+ companies (copy to portals.yml)
-│   └── states.yml               ← Canonical application statuses
-├── scripts/
-│   ├── generate-pdf.mjs         ← Playwright PDF generator
-│   ├── tracker-merge.mjs        ← Dedup + merge TSV additions
-│   └── pipeline-check.mjs       ← Health checks
-├── data/                        ← gitignored (your personal data)
-├── reports/                     ← gitignored (per-job eval reports)
-├── output/                      ← gitignored (generated PDFs)
-├── interview-prep/
-│   └── story-bank.md            ← STAR story library
-├── examples/
-│   └── resume.example.md        ← Resume format reference
-├── docs/
-│   └── SETUP.md                 ← Full setup guide
-└── .claude/skills/push-job/
-    └── push-job.md              ← Claude Code skill definition
-```
 
 ---
 
@@ -250,11 +232,11 @@ push-job/
 
 **Quality over quantity.**
 
-Push Job is designed to produce 3–5 strong, tailored applications per week — not 50
-spray-and-pray submissions. Every application has a researched cover letter, a keyword-optimized
-resume, and a clear reason to apply.
+Push Job is built to produce 3–5 strong, tailored applications per week — not 50 spray-and-pray submissions. Every application that goes out has a researched cover letter, a keyword-optimized resume, and a clear reason to apply.
 
-The agent prepares. You review. You submit.
+**The AI prepares. You review. You submit.**
+
+Push Job will never click Apply for you. Every cover letter, resume, and outreach message comes to you for review first.
 
 ---
 
@@ -265,17 +247,8 @@ Independent AI Engineer · AWS Certified Cloud Practitioner · Azure SOC Practit
 
 - Background: Microsoft Sentinel, KQL, Active Directory, honeynet-based threat detection
 - Certified: AWS Cloud Practitioner (CLF-C02) ✅ · Pursuing: CompTIA CySA+
-- Target: Cloud Engineer | SOC Analyst | DevSecOps | Cloud Security Engineer
-- Location: Charlotte, NC
-- Brand: BER/TMG
+- Target roles: Cloud Engineer | SOC Analyst | DevSecOps | Cloud Security Engineer
 - GitHub: [TushaeBXN](https://github.com/TushaeBXN)
-
----
-
-## Topics
-
-`job-search` `claude-code` `cloud` `cybersecurity` `career` `ai-agent` `open-source`
-`devsecops` `soc-analyst` `aws` `azure` `playwright`
 
 ---
 

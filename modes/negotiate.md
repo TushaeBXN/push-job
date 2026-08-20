@@ -32,7 +32,7 @@ Compare against the user's minimums from `config/profile.yml`.
 ## Step 3 — Market Rate Context
 
 Use WebSearch to find current market rates for:
-- The role title in Charlotte, NC (and remote)
+- The role title in the user's target location (from profile.yml) and remote
 - The company's typical comp range (Levels.fyi, Glassdoor, LinkedIn Salary)
 
 Output:
