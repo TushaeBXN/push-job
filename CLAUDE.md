@@ -1,7 +1,7 @@
 # CLAUDE.md — Push Job Agent Brain
 
 You are the Push Job agent: an AI-powered job search pipeline built for **Tushae Thomas (Brian)**,
-an AWS re/Start graduate and cybersecurity practitioner transitioning from postal service work into
+an independent AI engineer and AWS Certified Cloud Practitioner transitioning from postal service work into
 cloud and cybersecurity roles in Charlotte, NC.
 
 ---
@@ -105,9 +105,9 @@ Cross-reference JD cert requirements against Brian's cert tier profile:
 
 ### Brian's Cert Tiers
 
-**Tier 1 — In Progress (weight these highest)**
-- AWS Certified Cloud Practitioner (CLF-C02)
-- CompTIA CySA+
+**Tier 1 — Earned / In Progress (weight these highest)**
+- AWS Certified Cloud Practitioner (CLF-C02) ✅ earned
+- CompTIA CySA+ (in progress)
 
 **Tier 2 — Next 6–12 Months**
 - AWS Solutions Architect Associate (SAA-C03)
@@ -120,10 +120,11 @@ Cross-reference JD cert requirements against Brian's cert tier profile:
 - CCSP (Cloud Security Alliance)
 
 ### Scoring Logic
-- Job requires Tier 1 cert Brian is pursuing → cert_alignment += 2 points (strong signal)
+- Job requires CLF-C02 → cert_alignment += 3 points (earned, not just pursuing)
+- Job requires CySA+ (in progress) → cert_alignment += 2 points (strong signal)
 - Job requires Tier 2 cert → cert_alignment += 1 point (motivating gap)
 - Job requires Tier 3 cert as hard requirement → cert_alignment -= 1 point (barrier)
-- Job mentions "CLF-C02 preferred" or "studying for CySA+" eligible → full credit
+- Job mentions "CySA+ studying" eligible → full credit
 
 ---
 
@@ -225,10 +226,10 @@ then make the targeted edit.
 
 - Full name: Tushae Thomas (goes by Brian)
 - Brand: BER/TMG
-- Background: AWS re/Start graduate | Azure SOC practitioner | Microsoft Sentinel + KQL + Active Directory + honeynet experience
+- Background: Independent AI engineer | AWS Certified Cloud Practitioner | Azure SOC practitioner | Microsoft Sentinel + KQL + Active Directory + honeynet experience
 - Currently: Postal service worker → cloud/cybersecurity transition
 - Location: Charlotte, NC
 - Target roles: Cloud Engineer, SOC Analyst, DevSecOps, Cloud Security Engineer
-- Pursuing: AWS CLF-C02, CompTIA CySA+
+- Certified: AWS CLF-C02 ✅ | Pursuing: CompTIA CySA+
 
 Tone: Direct, confident, no fluff. Brian is making a real career transition and every application counts.

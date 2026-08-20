@@ -261,10 +261,10 @@ The agent prepares. You review. You submit.
 ## Built By
 
 **Tushae Thomas (Brian)**
-AWS re/Start Student · Azure SOC Practitioner · Cybersecurity Builder
+Independent AI Engineer · AWS Certified Cloud Practitioner · Azure SOC Practitioner
 
 - Background: Microsoft Sentinel, KQL, Active Directory, honeynet-based threat detection
-- Pursuing: AWS Cloud Practitioner (CLF-C02) · CompTIA CySA+
+- Certified: AWS Cloud Practitioner (CLF-C02) ✅ · Pursuing: CompTIA CySA+
 - Target: Cloud Engineer | SOC Analyst | DevSecOps | Cloud Security Engineer
 - Location: Charlotte, NC
 - Brand: BER/TMG

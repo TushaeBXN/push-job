@@ -24,9 +24,9 @@ Read the user's current cert tiers from `config/profile.yml` (`certs.tier1`, `ce
 
 Default tiers (override with profile.yml):
 
-**Tier 1 — In Progress**
-- AWS CLF-C02 (Cloud Practitioner)
-- CompTIA CySA+ (Cybersecurity Analyst)
+**Tier 1 — Earned / In Progress**
+- AWS CLF-C02 (Cloud Practitioner) ✅ earned
+- CompTIA CySA+ (Cybersecurity Analyst) — in progress
 
 **Tier 2 — Next 6–12 months**
 - AWS SAA-C03 (Solutions Architect Associate)
