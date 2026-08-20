@@ -50,6 +50,8 @@ npm install -g @anthropic/claude-code
 
 > **What's a terminal?** On Mac: press `Cmd + Space`, type `Terminal`, hit Enter. On Windows: search for `Command Prompt` in the Start menu.
 
+> **Have a powerful computer?** Claude Code supports pointing to a local AI model running on your own machine (via Ollama or LM Studio) instead of paying per use. If your machine can run a strong open-source model like Llama 3 or Mistral, you can dramatically cut costs that way. It is **not free** — you still need a Claude Code subscription to use the tool itself — but running a local model on top of it can make the ongoing usage nearly zero. This is an advanced setup; the standard paid subscription is the easiest way to get started.
+
 ---
 
 ## Setup — Step by Step
