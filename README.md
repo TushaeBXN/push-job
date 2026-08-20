@@ -11,7 +11,7 @@
 
 You tell it what kind of job you want. It scans 60+ company job boards, scores each posting, writes your cover letter, tailors your resume, tracks your applications, and reminds you when to follow up — all from a single chat window.
 
-Runs locally on your machine. Requires a Claude Code subscription (claude.ai/code).
+Runs locally on your machine. Requires a Claude Code subscription — the lowest tier works fine (claude.ai/code).
 
 ---
 
@@ -31,7 +31,7 @@ Runs locally on your machine. Requires a Claude Code subscription (claude.ai/cod
 
 ## Before You Start
 
-You need three things installed on your computer. Node.js and Git are free. Claude Code requires a paid subscription.
+You need three things installed on your computer. Node.js and Git are free. Claude Code requires a paid subscription — the lowest tier works fine.
 
 **1. Node.js** (the engine that runs the tool)
 - Download it at https://nodejs.org — click the button that says "LTS"
