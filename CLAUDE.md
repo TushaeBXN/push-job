@@ -68,6 +68,7 @@ Confirm: "Pipeline initialized. You're ready. Try `/evaluate [URL]` to score you
 | `/negotiate [offer amount]`               | `modes/negotiate.md`              |
 | `/outreach [company or person]`           | `modes/outreach.md`               |
 | `/portfolio-sync`                         | `modes/portfolio-sync.md`         |
+| `/gigs`                                   | `modes/gigs.md`                   |
 | `/check` or `/health`                     | Run `scripts/pipeline-check.mjs`  |
 | `/help`                                   | Print this routing table          |
 

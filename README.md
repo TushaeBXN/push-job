@@ -2,9 +2,13 @@
 
 ## ⚡ BIG UPDATE — Aug 25, 2025
 
-**The `/resume` mode now includes a Gap Disclosure step before rewriting your resume.**
+**Two upgrades shipping today:**
 
-After ATS keyword analysis, Push Job pauses and asks you — in your own words — what you've actually done that relates to the missing keywords. Use your phone's dictation feature or type it out. Both tools can finish the job. Only your real experience gets added to the resume, so it passes ATS on context — not keyword stuffing that gets filtered out anyway.
+**1. `/resume` → Gap Disclosure step**
+Before rewriting your resume, Push Job now asks you — in your own words — what you've actually done that covers the missing keywords. Use your phone's dictation feature or type it out. Both tools can finish the job. Only real experience gets added, so your resume passes ATS on context — not keyword stuffing that gets filtered out anyway.
+
+**2. New command: `/gigs` — FU Money Mode**
+FU money doesn't come from side hustles. Run `/gigs` and Push Job audits your resume for every skill that could earn you remote income today — then maps each one to a master list of niche gig platforms and marketplaces, including ones you've probably never heard of. Start adding yourself today.
 
 ---
 
