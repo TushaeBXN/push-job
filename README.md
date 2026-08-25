@@ -1,5 +1,13 @@
 # Push Job
 
+## ⚡ BIG UPDATE — Aug 25, 2025
+
+**The `/resume` mode now includes a Gap Disclosure step before rewriting your resume.**
+
+After ATS keyword analysis, Push Job pauses and asks you — in your own words — what you've actually done that relates to the missing keywords. Use your phone's dictation feature or type it out. Both tools can finish the job. Only your real experience gets added to the resume, so it passes ATS on context — not keyword stuffing that gets filtered out anyway.
+
+---
+
 <img width="1254" height="1254" alt="jobpush" src="https://github.com/user-attachments/assets/35d2c270-7228-4ddf-a7c7-6010de4c867d" />
 
 ![Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code-orange?style=flat-square)
