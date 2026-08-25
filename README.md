@@ -10,6 +10,9 @@ Before rewriting your resume, Push Job now asks you — in your own words — wh
 **2. New command: `/gigs` — FU Money Mode**
 FU money doesn't come from side hustles. Run `/gigs` and Push Job audits your resume for every skill that could earn you remote income today — then maps each one to a master list of niche gig platforms and marketplaces, including ones you've probably never heard of. Start adding yourself today.
 
+**3. `/interview` upgraded — Stage-Based Prep**
+Generic interview prep is out. The `/interview` mode now identifies which stage you're in — recruiter screen, hiring manager, panel, executive, or case study — and builds everything around what that specific interviewer is actually evaluating. Each stage has a completely different strategy, and now the agent knows the difference.
+
 ---
 
 <img width="1254" height="1254" alt="jobpush" src="https://github.com/user-attachments/assets/35d2c270-7228-4ddf-a7c7-6010de4c867d" />
