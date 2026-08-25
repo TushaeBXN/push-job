@@ -1,5 +1,12 @@
 # resume-mode.md — ATS Resume Tailoring + PDF Generation
 
+---
+
+> **⚡ BIG UPDATE — Aug 25, 2025**
+> Resume mode now includes a **Gap Disclosure Step** between ATS analysis and rewriting. After auditing your resume against the job description, Push Job will list what's missing and ask you to tell it — in your own words, by voice or text — what you've actually done that covers those gaps. Only then will it update your resume. This ensures your resume passes ATS because it reflects real experience, not keyword stuffing that gets filtered out.
+
+---
+
 **Trigger:** `/resume [URL or company name]`
 
 Read `modes/_shared.md` first.
@@ -31,6 +38,31 @@ KEYWORD          | In Resume? | Can Add?
 [keyword]        | ✅/❌      | ✅/❌
 ...
 ```
+
+---
+
+## Step 2.5 — Gap Disclosure (Required Before Rewriting)
+
+After producing the keyword gap table, **do not immediately rewrite the resume**. Instead, surface this prompt:
+
+```
+Here's what the ATS is looking for that isn't in your resume yet:
+
+[list missing keywords that can't be added]
+
+Before I update anything, I need to hear from you — not from the job description.
+
+Tell me in your own words: what have you actually done that relates to any of these gaps?
+You can use your phone's dictation feature and paste the transcript, or just type it out.
+Either way works — both tools can finish the job.
+
+(If you haven't done it, say so — I won't fabricate anything.)
+```
+
+Wait for the user's response. Then:
+- Only incorporate what the user confirms they've actually done
+- If a keyword gap truly can't be addressed honestly, flag it as a gap rather than papering over it
+- Never insert keywords that don't reflect real experience — ATS systems score context, not just keyword presence
 
 ---
 
